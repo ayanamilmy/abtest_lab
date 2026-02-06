@@ -14,9 +14,11 @@ pip install -e .
 ### 1.核心功能：
 #### (1) 计算样本量（即如果想要测出5%的提升，需要多少样本，才可以成功划分出一条能够分辨归属的界限）
 数学原理：
+
 $$
 n = \frac{\left( Z_{\alpha/2} \sqrt{2\bar{p}(1-\bar{p})} + Z_{\beta} \sqrt{p_1(1-p_1) + p_2(1-p_2)} \right)^2}{MDE^2}
 $$
+
 代码实现：
 ``` 
     p1 = baseline_rate
